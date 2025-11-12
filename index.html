@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/index.css">
+    <link rel="stylesheet" type="text/css" href="/navbar.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <!-- Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Favicon Logo -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/asset/logo.png">
+    <title>3'R Coffee</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="logo">
+                <h1>3'R Coffee</h1>
+            </div>
+            <div class="checkbox-navbar">
+                <input type="checkbox" id="hamburger-checkbox">
+                <label for="hamburger-checkbox" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul style="list-style-type: none;">
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#services  "><li>Service</li></a>
+                    <a href="#produk"><li>Menu</li></a>
+                    <a href="#daftar"><li>Our Clients</li></a>
+                </ul>
+            </div>
+            </nav>
+<!-- Header Section -->
+            <div class="hero" id="home">
+                <div class="container">
+                  <div class="box-hero">
+                    <div class="box">
+                      <h1>
+                        <span style="color: #0050b3; font-size: 30x;">3'R</span><br/>
+                        Coffee<span style="color: #b6b6b6; font-size: 30x;"></span>
+                      </h1>
+                      <p>
+                        Nama “3’R” bermakna Relax,
+                         Refresh, Recharge atau Racik,
+                          Rasa, Rileks, mencerminkan tempat
+                           bersantai sambil menikmati kopi racikan
+                            khas.</p>
+                      <a href="#services"><button>Selengkapnya</button></a>
+                      
+                    </div>
+                    <div class="box">
+                      <img src="/asset/logo.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </header>
+<!-- Whatsapp Floating -->
+<div id="whatsapp">
+    <a href="https://wa.me/+6283869000734?text=I'm%20interested%20in%20your%20Bouquet%20product%20" target="_blank" id="toogle1" class="wtsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</div>
+<!-- Instagram Floating -->
+<div id="instagram">
+  <a href="https://www.instagram.com/mkesyasakha/" target="_blank" id="toogle1" class="ig">
+    <i class='bx bxl-instagram'></i>
+  </a>
+</div>
+<!-- Services -->
+<div class="services" id="services">
+    <div class="container">
+      <div class="box-services">
+        <div class="box">
+          <i class='bx bx-wallet'></i>
+          <h4>Harga Terjangkau</h4>
+          <p>Harga Terjangkau Semua Kalangan Masyarakat</p>
+        </div>
+        <div class="box">
+          <i class='bx bxs-check-shield'></i>
+          <h4>Sudah Tersertifikasi</h4>
+          <p>Menggunakan Coffee Beans Pilihan</p>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-people-roof"></i>
+          <h4>Aman dan Ramah</h4>
+          <p> Cocok untuk semua kalangan</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Services -->
+  <!-- popup section -->
+  <div id="popupBatik" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeBatikPopup()">&times;</span>
+        <h2>Detail Menu</h2>
+        <img src="" alt="" id="popupImage">
+        <h3 id="popupBatikTitle"></h3>
+        <p id="popupBatikDescription"></p>
+    </div>
+</div>
+
+  <!-- Batik -->
+  <div class="batik" id="produk">
+  <div class="container">
+    <div class="box-batik">
+      <div class="box">
+        <img src="/asset/americano.jpg" alt="">
+        <h3>Americano</h3>
+        <p>18k</p>
+        <button class="btn-popup" onclick="openBatikPopup('Americano','Kopi hitam klasik dengan cita rasa kuat dan aroma khas, disajikan tanpa susu untuk kenikmatan murni biji kopi pilihan.','/asset/americano.jpg')">Details</button>
+      </div>
+
+      <div class="box">
+        <img src="/asset/latte.jpg" alt="">
+        <h3>Cafe Latte</h3>
+        <p>23k</p>
+        <button class="btn-popup" onclick="openBatikPopup('Cafe Latte','Perpaduan sempurna antara espresso dan susu panas dengan lapisan busa lembut, menghasilkan rasa yang halus dan creamy.','/asset/latte.jpg')">Details</button>
+      </div>
+
+      <div class="box">
+        <img src="/asset/caramel.jpg" alt="">
+        <h3>Caramel Macchiato</h3>
+        <p>25k</p>
+        <button class="btn-popup" onclick="openBatikPopup('Caramel Macchiato','Kombinasi espresso, susu panas, dan sirup karamel yang manis, menciptakan rasa lembut dengan aroma khas karamel.','/asset/caramel.jpg')">Details</button>
+      </div>
+
+      <div class="box">
+        <img src="/asset/choco.jpg" alt="">
+        <h3>Chocolatte</h3>
+        <p>28k</p>
+        <button class="btn-popup" onclick="openBatikPopup('Chocolatte','Minuman cokelat hangat atau dingin dengan rasa manis lembut, cocok untuk penikmat non-kopi yang tetap ingin bersantai.','/asset/choco.jpg')">Details</button>
+      </div>
+
+      <div class="box">
+        <img src="/asset/matcha.jpg" alt="">
+        <h3>Matcha Latte</h3>
+        <p>27k</p>
+        <button class="btn-popup" onclick="openBatikPopup('Matcha Latte','Perpaduan bubuk teh hijau premium dan susu segar yang menghasilkan rasa lembut, sedikit pahit, dan menenangkan.','/asset/matcha.jpg')">Details</button>
+      </div>
+
+      <div class="box">
+        <img src="/asset/mb.jpg" alt="">
+        <h3>Milk Brown Sugar</h3>
+        <p>23k</p>
+        <button class="btn-popup" onclick="openBatikPopup('Milk Brown Sugar','Susu segar berpadu dengan gula aren manis khas, menciptakan rasa lembut dan karamel alami yang nikmat.','/asset/mb.jpg')">Details</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Daftar -->
+<div class="row" id="daftar">
+    <h1 style="font-size: 2rem;">
+      Our Clients<br />
+   </h1>
+    <!-- <div class="column">
+      <h3>Founder La'Fleuer</h3>
+      <img width="100px" height="100px" src="asset/kk.png">
+    </div> -->
+    <div class="column">
+      <h3>Sano</h3>
+      <img  width="80px" height="80px" style="border-radius: 50px;" src="asset/sano.jpeg">
+    </div>
+    <div class="column">
+      <h3>Universitas Gajayana Malang</h3>
+      <img  width="80px" height="80px" src="asset/logokj.png">
+    </div>
+  </div>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Explore and get to know us better!</p>
+    <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.567211241238!2d112.59989567412309!3d-7.940185879084764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6281bf5024dbb%3A0x7c59f80869f3bbea!2sUniversitas%20Gajayana!5e0!3m2!1sid!2sid!4v1762922302216!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <form action="checkMassage.html">
+            <div class="input-group">
+                <box-icon name="user-circle" size="md" animation="tada-hover" color="white"></box-icon>
+                <input type="text" placeholder="Name" required>
+            </div>
+            <div class="input-group">
+                <box-icon type="logo" name="gmail" size="md" animation="tada-hover" color="white"></box-icon>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <box-icon name='message-square-dots' size="md" animation="tada-hover" color="white"></box-icon>
+                <input type="text" placeholder="Your Massage" required>
+            </div>
+            <div class="input-group">
+                <box-icon name="phone" size="md" animation="tada-hover" color="white"></box-icon>
+                <input type="number" placeholder="Phone Number" required>
+            </div>
+            <a style="text-decoration: none;" class="btn" href="mailto:mkesyasakha@gmail.com">Send</a>
+        </form>
+    </div>
+</section>
+ <!-- Footer -->
+ <div class="footer">
+    <div class="container">
+      <div class="box-footer">
+        <div class="box">
+        </div>
+        <div class="box-copy">
+          <p>&copy; Copyright by <span>Sano</span> All Rights Reserved 2025</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <!-- Daftar -->
+<script src="/script.js"></script>
+</body>
+</html>
